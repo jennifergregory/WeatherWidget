@@ -1,0 +1,26 @@
+<script src="assets/js/weatherWidget.js" type="text/javascript"></script>
+<link href="assets/css/weatherWidget.css" rel="stylesheet">
+
+<div class="weatherwidget_container" id="weather-widget">
+    <div class="weatherwidget_app" ng-controller="widgetController">
+        <div ng-if="errorMessage">{{errorMessage}}</div>
+        <div class="weatherwidget_city">
+            <span>{{model.location.city}},{{model.location.region}}</span>
+        </div>
+        <div class="weatherwidget_align_line_2">
+            <div class="weatherwidget_line_2 weatherwidget_align_line_2">
+                <span>{{model.currentCondition.temp}}&#176;</span>
+            </div>
+            <div class="weatherwidget_weather_description">
+                <div class="weatherwidget_image_container">
+                    <img class="weatherwidget_img" ng-src="{{model.img}}">
+                </div>
+                <span class="weatherwidget_weather_type">{{model.currentCondition.text}}</span>
+            </div>
+        </div>
+        <div ng-repeat="forecast in model.forecast" class="weatherwidget_tempgrid">
+            <span class="weatherwidget_tempgrid_day_size">{{forecast.day}}</span>
+            <span>{{forecast.high}}&#176;/{{forecast.low}}&#176;</span>
+        </div>
+    </div>
+</div>

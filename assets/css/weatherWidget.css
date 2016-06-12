@@ -1,0 +1,83 @@
+
+    .weatherwidget_city {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+
+    .weatherwidget_align_line_2 {
+        width: 310px;
+        float: left;
+        height:85px;
+    }
+
+    .weatherwidget_line_2 {
+        font-size: 65px;
+        margin-left: 10px;
+        font-weight: bold;
+        width: 100px;
+        margin-top:5px;
+    }
+
+    .weatherwidget_tempgrid {
+        margin-bottom: 10px;
+        width: 50px;
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .weatherwidget_tempgrid:not(:last-child) {
+        border-right: dotted gray;
+        border-right-width: thin;
+    }
+
+    .weatherwidget_img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .weatherwidget_image_container {
+        width: 100px;
+    }
+
+    .weatherwidget_weather_description {
+        width: 100px;
+        display: inline-block;
+    }
+
+    .weatherwidget_weather_type {
+        width: 100px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .weatherwidget_container {
+        position: absolute;
+        top: 50%;
+        margin-top: -80px; 
+        left: 0;
+        width: 100%;
+    }
+
+    .weatherwidget_app {
+        width: 310px;
+        height: 160px;
+        border: solid grey;
+        border-width: 1px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 5px 5px grey;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+
+    .weatherwidget_tempgrid_day_size {
+        font-size: 15px;
+    }
