@@ -76,6 +76,7 @@
         margin-right: auto;
         box-shadow: 5px 5px grey;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        background-color:white;
     }
 
     .weatherwidget_tempgrid_day_size {
